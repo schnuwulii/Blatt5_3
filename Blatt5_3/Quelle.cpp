@@ -8,7 +8,7 @@ int main()
 {
 	//srand();
 	rand();
-	einlesen();
+	einlesen(arrayy);
 	sortieren(arrayy, anzahl);
 	ausgabe(arrayy, anzahl);
 

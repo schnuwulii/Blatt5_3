@@ -11,6 +11,6 @@
 
 //int srand();
 int rand();
-void einlesen();
+void einlesen(int[]);
 void sortieren(int[], int);
 void ausgabe(int[], int);

@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include"Konstanten.h"
-#define anzahl 10
+#define anzahl 11
 
 int array[anzahl];
 
 
-void einlesen()
+void einlesen(int array[])
 {
 	for (int i = 0; i < 10; i++)
 	{
 		//srand(time(NULL));
-		array[i] = rand() %10;
-		printf_s("%6d", array[i]);
+		array[i] = rand() % 10;
+		printf_s("%d\n", array[i]);
+		
 	}
+
+	
 }
 void sortieren(int array[], int size)
 {
@@ -32,13 +35,16 @@ void sortieren(int array[], int size)
 				array[i + 1] = temp;
 
 				swapped = 1;
+				
 			}
 		}
 		if (swapped == 0) {
 			break;
 		}
 	}
+	
 }
+
 void ausgabe(int array[], int size)
 {
 	for (int i = 0; i < size; ++i) {
